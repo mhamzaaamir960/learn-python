@@ -8,7 +8,6 @@ print("Hello, world!")
 # Multi-line comment
 
 # Use single quote for multi-line comment
-
 '''
 This is a multi-line comment.
 It is used to write a comment that spans multiple lines.
