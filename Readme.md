@@ -22,7 +22,7 @@ It supports multiple programming paradigms, including **Object-Oriented, Procedu
 
 ---
 
-# Python Implementations
+## Python Implementations
 
 Python has multiple implementations, each designed for different use cases. Below are some of the most common ones:
 
