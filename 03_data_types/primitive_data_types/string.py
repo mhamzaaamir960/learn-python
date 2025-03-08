@@ -32,6 +32,11 @@ This is multi-line string using double triple quotes."""
 # print(message2)
 
 
+# Repitition of string
+reps = "Hello, " * 5
+# print(reps) # Hello, Hello, Hello, Hello, Hello,
+
+
 # Indexing and Slicing
 
 # Indexing
@@ -57,7 +62,76 @@ print(numbers[:-2])
 # due to -1 it will print reverse and from index 2 to 0
 print(numbers[2::-1])
 
+print(numbers[-5:])  # it start indexing from -5 to end
+print(numbers[-5])  # it only print value which is at index -7
+
+print(numbers[::])  # it print all the values
+print(numbers[:])  # it print all the values
+
+# it print values from index -5 to start with reverse order
 print(numbers[-5::-1])
+
+# it will print only one value
+print(numbers[-5:-6:-1])
 
 # Reverse the string
 print(numbers[::-1])
+
+
+# Case Conversion Methods
+print(full_name.upper())
+print(full_name.lower())
+print(full_name.title())
+print(full_name.capitalize())
+print(full_name.swapcase())
+
+s1 = "straße"   # German word for "street"
+s2 = "STRASSE"
+
+print(s1.lower() == s2.lower())    # False
+print(s1.casefold() == s2.casefold())  # True (case-insensitive comparison)
+
+
+# Searching & Replacing
+# 1. User of .replace() method
+# 2. Use of .find() method
+
+name = "Muhammad Hamza Aamir"
+print(name.replace("Hamza", "Omer"))  # Muhammad Omer Aamir
+print(name.find("Hamza"))  # it returns the index of the finding string
+
+
+# Splitting & Joining
+# 1. use of .split() method
+# 2. use of .join() method
+
+fruits = "apple, banana, cherry"
+print(fruits.split(", "))  # ['apple', 'banana', 'cherry']
+
+fruits2 = ["apple", "banana", "cherry"]
+print(", ".join(fruits2))  # apple banana cherry
+
+
+# String formatting
+# 1. using f-string (Python 3.6+)
+# 2. using .format() method
+
+# f-string using double quotes for single line string
+name = "Muhammad Hamza Aamir"
+age = 21
+city = "Rawalpindi"
+data = f"My name is {name}. I am {age} years old. I live in {city}."
+print(data)
+
+# f-string using triple double quotes for multi-line string
+data = f"""My name is {name}. 
+I am {age} years old.
+I live in {city}."""
+print(data)
+
+# .format() method
+data = """My name is {}. 
+I am {} years old. 
+I live in {}.""".format(name, age, city)
+print(data)
+

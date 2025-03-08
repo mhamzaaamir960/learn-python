@@ -18,3 +18,4 @@
 3. **`.title()`** => The first letter of each word will be capital.
 4. **`.capitalize()`** => First letter of first word will be capital.
 5. **`.swapcase()`** => Swap letters (small letters will be capital and capital letters will be small)
+6. **`.casefold()`** => It converts text to lowercase more aggressively than `.lower()`, making it ideal for **case-insensitive comparisons**, especially in multilingual text.
