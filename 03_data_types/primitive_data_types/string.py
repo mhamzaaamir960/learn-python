@@ -115,6 +115,8 @@ print(", ".join(fruits2))  # apple banana cherry
 # String formatting
 # 1. using f-string (Python 3.6+)
 # 2. using .format() method
+# 3. Old style string formating using %
+
 
 # f-string using double quotes for single line string
 name = "Muhammad Hamza Aamir"
@@ -135,3 +137,84 @@ I am {} years old.
 I live in {}.""".format(name, age, city)
 print(data)
 
+
+# Old style formating
+data = "My name is %s and I am %d years old. I live in %s." % (name, age, city)
+print(data)
+
+
+# Escape Characters
+
+# Escape Characters
+
+# `\t` Tab (Horizantal tab space)
+
+# `\n` Newline (moves to next line)
+
+# `\\` Backslash
+
+# `\'` Single Quotes
+
+# `\"` Double Quotes
+
+# `\r` Carriage Return
+
+# `\b` Backspace
+
+# `\f` Form Feed
+
+# `\v` Vertical Tab
+
+# `\a` Bell Sound
+
+
+print("Hello\tworld!")  # \t => Hello    world!
+print("Hello\nworld!")  # \n => Hello
+# world!
+
+print("Hello\\world!")  # \\ => Hello\world!
+print("Hello\"world!")  # \" => Hello"world!
+print("Hello\'world!")  # \' => Hello'world!
+print("Hamza\bAamir!")  # \b => HamzAamir!
+print("no_benefits_of_study\rbenifits___")
+print("Hello\vworld!")  # \v => Helloworld! 
+# print(Hello\fworld!", ) # \f => Helloworld!()
+
+# If you don't want Python to treat \ as an escape character, use raw strings (r""):
+ 
+print(r"Hamza\nAamir") # Hamza\nAamir
+
+# Prefixes
+#   .removeprefix()
+#   .removesuffix()
+
+link = "https://www.google.com/calender"
+print(link.removeprefix("https://"))  # www.google.com/calender
+print(link.removesuffix("/calender"))  # https://www.google.com
+
+
+# .startswith()
+# .endswith()
+
+print(link.startswith("https://"))  # True
+print(link.endswith("/calender"))  # True
+
+# Two unicode built in functions
+# - ord()
+# - chr()
+
+print(ord("b"))  # 98 (Only one character is allowed to check ASCAII value)
+print(chr(90))  # Z
+
+
+# Encoding & Decoding
+# - .encode()
+# - .decode()
+
+name = "Hamza"
+encoded = name.encode("utf-8")
+print(encoded)  # b'Hamza'
+
+decoded = encoded.decode("utf-8")
+print(decoded)  # Hamza
+ 
