@@ -1,2 +1,3 @@
 
-
+str("Hamza")
+repr("Hamza")
