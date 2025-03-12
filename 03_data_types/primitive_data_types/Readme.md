@@ -36,3 +36,21 @@ A Boolean (`bool`) is data type in python that represents two possible values wh
   - `True` is internally represented as `1`.
   - `False` is internally represented as `2`.
   - Example: True + True = 2
+
+
+## Complex (complex)
+
+Python has a built in complex number type, denoted as `complex`, which is used for mathematical computations involving imaginary numbers.
+- Complex numbers are represented as `a+bj`.
+  - `a` is real part (a float or integer).
+  - `b` is imaginary part (a float or integer).
+  - `j` represents the imaginary unit (equivalent to sqrt(-1)).
+
+
+### None
+
+In Python `None` is a special singletion object that represents the null value.
+- None is not same as `0`, an empty string `("")` or `False`. It has its own data type
+- None belongs to `NoneType`.
+- It is used to signify that a variable has no value or that a function returns nothing.
+
