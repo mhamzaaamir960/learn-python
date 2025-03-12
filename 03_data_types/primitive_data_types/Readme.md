@@ -23,3 +23,16 @@
 ## Integer (int)
 
 The integer `(int)` data type is used to represent whole numbers, both positive and negative including zero. Python integers have arbitary precision, meaning they can grow as large as the available memory allows. It does not have fixed no. of bits for integers.
+
+## Float (float)
+
+A `float` (floating-point number) is a numeric data type used to represent decimal numbers. It supports positive and negative values including scientific notation.
+
+## Boolean (bool)
+
+A Boolean (`bool`) is data type in python that represents two possible values which is `True` or `False`.
+
+- Python boolean data type is based on integer values
+  - `True` is internally represented as `1`.
+  - `False` is internally represented as `2`.
+  - Example: True + True = 2
