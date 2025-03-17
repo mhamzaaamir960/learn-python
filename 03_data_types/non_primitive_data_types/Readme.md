@@ -71,3 +71,4 @@ A tuple is an immutable, ordered collection of elements in Python. It is similar
 | **Performance**  | Faster (uses less memory)      | Slower (due to mutability)       |
 | **Memory Usage** | Requires less memory           | Requires more memory             |
 | **Use Case**     | Suitable for fixed collections | Suitable for dynamic collections |
+
