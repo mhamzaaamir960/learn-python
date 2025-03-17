@@ -55,3 +55,19 @@ A tuple is an immutable, ordered collection of elements in Python. It is similar
 - `Allows Duplicates:` The same element can appear multiple times.
 - `Heterogeneous:` Can store different data types.
 - `Faster than lists:` Accessing elements is quicker due to immutablity.
+
+### Tuple Methods
+
+| Method     | Description                                       |
+| ---------- | ------------------------------------------------- |
+| `count(x)` | Returns the number of occurrences of `x`.         |
+| `index(x)` | Returns the index of the first occurrence of `x`. |
+
+## Tuple vs List: Key Differences
+
+| Feature          | Tuple                          | List                             |
+| ---------------- | ------------------------------ | -------------------------------- |
+| **Mutability**   | Immutable (cannot be modified) | Mutable (can be modified)        |
+| **Performance**  | Faster (uses less memory)      | Slower (due to mutability)       |
+| **Memory Usage** | Requires less memory           | Requires more memory             |
+| **Use Case**     | Suitable for fixed collections | Suitable for dynamic collections |
