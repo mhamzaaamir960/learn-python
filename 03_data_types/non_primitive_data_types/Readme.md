@@ -2,9 +2,9 @@
 
 1. `List (list)`
 2. `Tuple (tuple)`
-3. `Set (set)`
-4. `Frozen Set (frozenset)`
-5. `Dictionary (dict)`
+3. `Dictionary (dict)`
+4. `Set (set)`
+5. `Frozen Set (frozenset)`
 6. `Byte Array (bytearray)`
 7. `Memory View (memoryview)`
 
@@ -72,3 +72,26 @@ A tuple is an immutable, ordered collection of elements in Python. It is similar
 | **Memory Usage** | Requires less memory           | Requires more memory             |
 | **Use Case**     | Suitable for fixed collections | Suitable for dynamic collections |
 
+## Dictionary (dict)
+
+A dictioary `dict` in Python is an unordered, mutable data structure that stores key-value pairs. It allows fast **lookups**, **insertions** and **deletions** because it is implemented using **hash tables**.
+
+### Key Characteristics of Dictionary
+
+- `Unordered:` The order of the items is not guaranteed.
+- `Mutable:` You can change, add or remove key-value pairs.
+- `Unique Key:` Key must be unique and duplicate keys overwrite previous values.
+- `Immutable Key:` Strings, Numbers, and Tuples (immutalble objects) can be used as keys, but lists and dictionaries cannot used as keys.
+
+### Dictionary Methods
+
+| Method                    | Description                                                     |
+| ------------------------- | --------------------------------------------------------------- |
+| `dict.get(key, default)`  | Returns value of key, or default if key is missing.             |
+| `dict.keys()`             | Returns all keys in dictionary.                                 |
+| `dict.values()`           | Returns all values in dictionary.                               |
+| `dict.items()`            | Returns all key-value pairs as tuples.                          |
+| `dict.pop(key, default)`  | Removes key and returns value.                                  |
+| `dict.popitem()`          | Removes and returns last inserted key-value pair (Python 3.7+). |
+| `dict.update(other_dict)` | Merges another dictionary.                                      |
+| `dict.clear()`            | Removes all elements.                                           |
