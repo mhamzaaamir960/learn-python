@@ -76,6 +76,10 @@ A tuple is an immutable, ordered collection of elements in Python. It is similar
 
 A dictioary `dict` in Python is an unordered, mutable data structure that stores key-value pairs. It allows fast **lookups**, **insertions** and **deletions** because it is implemented using **hash tables**.
 
+- Dict can be created using:
+  - using curly braces `{}`
+  - using `dict()` constructor
+
 ### Key Characteristics of Dictionary
 
 - `Unordered:` The order of the items is not guaranteed.
@@ -95,3 +99,47 @@ A dictioary `dict` in Python is an unordered, mutable data structure that stores
 | `dict.popitem()`          | Removes and returns last inserted key-value pair (Python 3.7+). |
 | `dict.update(other_dict)` | Merges another dictionary.                                      |
 | `dict.clear()`            | Removes all elements.                                           |
+
+## Set (set)
+
+A set in Python is an unordered, mutable collection of unique, immutable elements. It is implemented using hash tables, making lookups, insertions and deletions very fast (`0(1)`) on average.
+
+- Set can created using two ways:
+  - Using curly braces `{}`
+  - Using the `set()` constructor => `set()` must be used when creating empty set instead of curly `{}` braces.
+
+### Properties of set
+
+- `Unordered:` Items do not maintain a specific order.
+- `Unique Elements:` Duplicates are automatically removed.
+- `Mutable:` Items can be added or removed easily.
+
+### Set Methods in Python
+
+| Method                                  | Description                                                            |
+| --------------------------------------- | ---------------------------------------------------------------------- |
+| `set.add(item)`                         | Adds an item to the set.                                               |
+| `set.remove(item)`                      | Removes an item (raises an error if missing).                          |
+| `set.discard(item)`                     | Removes an item (does not raise an error if missing).                  |
+| `set.pop()`                             | Removes and returns a random item.                                     |
+| `set.clear()`                           | Removes all elements from the set.                                     |
+| `set.union(set2)`                       | Returns the union of two sets.                                         |
+| `set.update(set2)`                      | Adds all elements from `set2` to the original set.                     |
+| `set.intersection(set2)`                | Returns the intersection of two sets.                                  |
+| `set.intersection_update(set2)`         | Keeps only the elements that are also present in `set2`.               |
+| `set.difference(set2)`                  | Returns elements in the first set that are not in the second set.      |
+| `set.difference_update(set2)`           | Removes elements from the set that are also in `set2`.                 |
+| `set.symmetric_difference(set2)`        | Returns elements unique to each set (excluding common elements).       |
+| `set.symmetric_difference_update(set2)` | Updates the set to contain only elements that are unique to each set.  |
+| `set.issubset(set2)`                    | Checks if the set is a subset of another set.                          |
+| `set.issuperset(set2)`                  | Checks if the set is a superset of another set.                        |
+| `set.isdisjoint(set2)`                  | Returns `True` if the sets have no common elements, otherwise `False`. |
+
+### Key Differences: `{}` vs `set()`
+
+| Feature                       | `{}` (Curly Braces)          | `set()` Constructor |
+| ----------------------------- | ---------------------------- | ------------------- |
+| Creating a set with elements  | ✅ Yes                       | ✅ Yes              |
+| Creating an empty set         | ❌ No (Creates a dictionary) | ✅ Yes              |
+| Converting iterables to a set | ❌ No                        | ✅ Yes              |
+| Performance                   | ⚡ Faster                    | 🐢 Slightly Slower  |
