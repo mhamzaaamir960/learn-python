@@ -49,4 +49,9 @@ get_data("Ibrahim", 21, "Rawalpindi")
 
 get_data(city="Multan", name="Wahab", age=24)
 
+# Passing an arbitary number of arguments
+def make_pizza(*toppings):
+    print(toppings)
+    
+make_pizza("Cheese")
 
