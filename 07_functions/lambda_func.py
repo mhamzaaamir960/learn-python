@@ -20,6 +20,10 @@ data = student_data(name="Hamza", age=21, city="Rawalpindi")
 # print(data)
 
 
+cube = (lambda x: x*x*x)(3)
+print(f"Cube: {cube}")
+
+
 # using map() function
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = list(map(lambda x: x*x, numbers))

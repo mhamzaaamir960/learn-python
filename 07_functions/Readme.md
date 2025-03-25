@@ -25,7 +25,6 @@ A function in python is a **block of resuable code** that performs a specific ta
 - Decorator (Modifies another function, `@decorator`)
 - Class Method (Uses `@classmethod`, modifies class, `def increment(cls)`)
 - Static Method (Uses `@staticmethod`, no `self`, `def add(x,y)`)
-- Coroutine (Pauses & resumes execution, `def coroutine(): yield`)
 
 ## Function Parameters and Arguments
 
