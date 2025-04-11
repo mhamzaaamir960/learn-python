@@ -5,7 +5,7 @@ Object-Oriented Programming (OOP) in Python is a paradigm that allows structurin
 ## Key OOP concepts in Python
 
 - `Class`: A blueprint for creating objects.
-- `Object`: An instance of a class with its own attributes and methods.
+- `Object`: An instance of a class with its own attributes. (In python both variables and methods are called attributes.)
 - `Encapsulation`: Restricting direct access to object data using private and protected attributes.
   - Encapsulation uses access modifiers to control data access.
   - **Public** (`name`) - Accessible anywhere
@@ -17,3 +17,25 @@ Object-Oriented Programming (OOP) in Python is a paradigm that allows structurin
   - Polymorphism allows the same method (`make_sound()`) to behave differently in different classes.
 - `Abstraction`: Hiding implementation details and exposing only neccessary parts.
   - Abstraction can be implemented using abstract classes (`ABC` module) to enforce method definitions.
+
+### Attributes
+
+- Attributes are member variables and member functions.
+
+### Objects
+
+- Object is an instance of a class.
+- Objects are of two types: (One class has exactly one class object but can have any number of instance objects.)
+  - class object
+  - instance object
+
+### variables
+
+- Class object variables (Static variables)
+- Instance object variables
+
+### Methods
+
+- Class Method
+- Static Method
+- Instance Method
