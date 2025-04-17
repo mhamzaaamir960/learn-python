@@ -65,16 +65,16 @@ class SLL:
                 return value
         else:
             temp = self.start
-            while temp.next is not None:
-                if temp.next.item == data:
-                    global vlaue
-                    value = temp.next.item
-                    temp.next = temp.next.next
-                    return value
-                temp = temp.next
+            if temp.item == data:
+                self.start = temp.next
+            else:
+                while temp.next is not None:
+                    if temp.next.item == data:
+                        value = temp.next.item
+                        temp.next = temp.next.next
+                        return value
+                    temp = temp.next
                     
-            
-
     def print_values(self):
         temp = self.start
         while temp is not None:
@@ -131,11 +131,11 @@ li.print_values()
 # li.delete_last()
 # li.delete_last()
 
-print(f"deleted item: {li.delete_item(30)}")
-print(f"deleted item: {li.delete_item(25)}")
-print(f"deleted item: {li.delete_item(40)}")
-print(f"deleted item: {li.delete_item(50)}")
-print(f"deleted item: {li.delete_item(20)}")
+# print(f"deleted item: {li.delete_item(30)}")
+# print(f"deleted item: {li.delete_item(25)}")
+# print(f"deleted item: {li.delete_item(40)}")
+# print(f"deleted item: {li.delete_item(50)}")
+# print(f"deleted item: {li.delete_item(20)}")
 print(f"deleted item: {li.delete_item(10)}")
 
 
