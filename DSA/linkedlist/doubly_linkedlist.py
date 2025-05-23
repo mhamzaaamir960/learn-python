@@ -3,20 +3,21 @@ class Node:
         self.item = item
         self.prev = prev
         self.next = next
-        
+
+
 class DLL:
     def __init__(self, start=None):
         self.start = start
-        
+
     def is_empty(self):
         return self.start == None
-    
+
     def insert_at_start(self, data):
         new_node = Node(data, next=self.start)
         if self.start:
             self.start.prev = new_node
         self.start = new_node
-        
+
     def insert_at_last(self, data):
         new_node = Node(data)
         if self.is_empty():
@@ -27,14 +28,14 @@ class DLL:
                 current = current.next
             current.next = new_node
             new_node.prev = current
-            
+
     def insert_after(self, temp, data):
         if temp is not None:
             new_node = Node(data, prev=temp, next=temp.next)
             if temp.next is not None:
                 temp.next.prev = new_node
             temp.next = new_node
-            
+
     def search(self, data):
         temp = self.start
         while temp is not None:
@@ -43,7 +44,7 @@ class DLL:
             temp = temp.next
         if temp is None:
             return None
-        
+
     def delete_first(self):
         if self.start:
             temp = self.start
@@ -51,7 +52,7 @@ class DLL:
             if self.start:
                 self.start.prev = None
             return temp.item
-        
+
     def delete_last(self):
         temp = self.start
         if not temp:
@@ -64,7 +65,7 @@ class DLL:
             temp.next.prev = None
             temp.next = None
         return self.start
-    
+
     def delete_item(self, data):
         if not self.start:
             pass
@@ -83,22 +84,22 @@ class DLL:
                         self.start.prev = None
                     break
                 temp = temp.next
-                
+
     def print_values(self):
         if self.start:
             temp = self.start
             while temp:
                 print(temp.item)
                 temp = temp.next
-                
+
     def __iter__(self):
         return DLLIterator(self.start)
-        
+
 
 class DLLIterator:
-    def __init__(self,start):
+    def __init__(self, start):
         self.current = start
-        
+
     def __iter__(self):
         return self
 
@@ -122,6 +123,6 @@ node.delete_item(30)
 
 
 for val in node:
-    print(val,end=" ")
-    
+    print(val, end=" ")
+
 print()

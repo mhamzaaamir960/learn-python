@@ -54,7 +54,7 @@ class SLL:
             while temp.next.next is not None:
                 temp = temp.next
             temp.next = temp.next.next
-            
+
     def delete_item(self, data):
         if self.start is None:
             pass
@@ -74,7 +74,7 @@ class SLL:
                         temp.next = temp.next.next
                         return value
                     temp = temp.next
-                    
+
     def print_values(self):
         temp = self.start
         while temp is not None:
@@ -137,12 +137,6 @@ li.print_values()
 # print(f"deleted item: {li.delete_item(50)}")
 # print(f"deleted item: {li.delete_item(20)}")
 print(f"deleted item: {li.delete_item(10)}")
-
-
-
-
-
-
 
 
 print("------")
