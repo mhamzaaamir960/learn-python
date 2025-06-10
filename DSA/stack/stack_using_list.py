@@ -21,33 +21,35 @@ class Stack:
             else:
                 self.top -= 1
             self.stack.pop()
+        else:
+            raise IndexError("Stack is empty!")
 
     def peek(self):
         if not self.is_empty():
             return self.stack[self.top]
         else:
-            return "Stack is empty!"
+            raise IndexError("Stack is empty!")
 
     def size(self):
         if self.is_empty():
-            return "Stack is empty!"
+            raise IndexError("Stack is empty!")
         else:
             self.top += 1
             return self.top
         
 s1 = Stack()
 print(s1.is_empty())
-s1.push(10)
-s1.push(20)
-s1.push(30)
-s1.push(40)
-s1.push(50)
+# s1.push(10)
+# s1.push(20)
+# s1.push(30)
+# s1.push(40)
+# s1.push(50)
 
-# s1.pop()
+s1.pop()
 
-while not s1.is_empty():
-    print(s1.peek())
-    s1.pop()
+# while not s1.is_empty():
+#     print(s1.peek())
+#     s1.pop()
 
 
 # print(s1.peek())
