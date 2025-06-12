@@ -100,7 +100,7 @@ class SLLIterator:
         return data
 
 
-li = SLL()
+# li = SLL()
 
 # print(li.is_empty())
 # li.insert_at_start(30)
@@ -136,8 +136,8 @@ li = SLL()
 # print(f"deleted item: {li.delete_item(40)}")
 # print(f"deleted item: {li.delete_item(50)}")
 # print(f"deleted item: {li.delete_item(20)}")
-print(f"deleted item: {li.delete_item(20)}")
+# print(f"deleted item: {li.delete_item(20)}")
 
 
-print("------")
-li.print_values()
+# print("------")
+# li.print_values()
