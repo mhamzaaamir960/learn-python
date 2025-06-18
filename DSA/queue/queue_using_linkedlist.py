@@ -17,10 +17,10 @@ class Queue:
         new_node = Node(data)
         if self.is_empty():
             self.front = new_node
-            self.rear = new_node
         else:
             self.rear.next = new_node
-            self.rear = self.rear.next
+        
+        self.rear = new_node
         self.item_count += 1
 
     def dequeue(self):
@@ -50,38 +50,38 @@ class Queue:
         return self.item_count
 
 
-q1 = Queue()
-# print(q1.size())
+# q1 = Queue()
+# # print(q1.size())
+
+# # try:
+# #     print(q1.get_front())
+# # except IndexError as e:
+# #     print(e)
+
+
+# q1.enqueue(10)
+# q1.enqueue(20)
+# q1.enqueue(30)
+# q1.enqueue(40)
+# q1.enqueue(50)
 
 # try:
-#     print(q1.get_front())
-# except IndexError as e:
-#     print(e)
-
-
-q1.enqueue(10)
-q1.enqueue(20)
-q1.enqueue(30)
-q1.enqueue(40)
-q1.enqueue(50)
-
-try:
-    print(f"Front=>{q1.get_front()}")
-    print(f"Rear=>{q1.get_rear()}")
+#     print(f"Front=>{q1.get_front()}")
+#     print(f"Rear=>{q1.get_rear()}")
     
-    q1.dequeue()
-    q1.dequeue()
-    q1.dequeue()
-    q1.dequeue()
-    # q1.dequeue()
-    # q1.dequeue()
+#     q1.dequeue()
+#     q1.dequeue()
+#     q1.dequeue()
+#     q1.dequeue()
+#     # q1.dequeue()
+#     # q1.dequeue()
 
-    print()
-    print(f"Front=>{q1.get_front()}")
-    print(f"Rear=>{q1.get_rear()}")
-except IndexError as e:
-    print(e.args[0])
+#     print()
+#     print(f"Front=>{q1.get_front()}")
+#     print(f"Rear=>{q1.get_rear()}")
+# except IndexError as e:
+#     print(e.args[0])
 
 
 
-print(q1.size())
+# print(q1.size())
