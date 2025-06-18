@@ -1,35 +1,33 @@
 from singly_linkedlist import SLL
 
-
-class Queue:
+class Queue(SLL):
     def __init__(self):
-        self.li = SLL()
+        super().__init__()
         self.item_count = 0
-    
-    
+        
     def is_empty(self):
-        return self.li.is_empty()
+        return super().is_empty()
     
-    def enqueue(self, data):
-        self.li.insert_at_last(data)
+    def enqueue(self,data):
+        super().insert_at_last(data)
         self.item_count += 1
         
     def dequeue(self):
         if not self.is_empty():
-            self.li.delete_first()
+            super().delete_first()
             self.item_count -= 1
         else:
             raise IndexError("Queue is Empty!")
     
     def get_front(self):
         if not self.is_empty():
-            return self.li.start.item
+            return self.start.item
         else:
             raise IndexError("Queue is Empty!")
-    
+        
     def get_rear(self):
         if not self.is_empty():
-            temp = self.li.start
+            temp = self.start
             while temp.next:
                 temp = temp.next
             return temp.item
@@ -38,15 +36,15 @@ class Queue:
         
     def size(self):
         return self.item_count
-    
-    
+        
+        
 q1 = Queue()
-# print(q1.size())
+print(q1.size())
 
-# try:
-#     print(q1.get_front())
-# except IndexError as e:
-#     print(e)
+try:
+    print(q1.get_front())
+except IndexError as e:
+    print(e)
 
 
 q1.enqueue(10)
@@ -77,9 +75,3 @@ except IndexError as e:
 
 
 print(q1.size())
-
-
-
-        
-        
-        
