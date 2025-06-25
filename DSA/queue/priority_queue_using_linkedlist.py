@@ -19,11 +19,11 @@ class PriorityQueue:
             self.start = new_node
         else:
             temp = self.start
-            if temp.priority >= priority:
+            if temp.priority > priority:
                 new_node.next = temp
                 self.start = new_node
             else:
-                while temp.next and temp.next.priority < priority:
+                while temp.next and temp.next.priority <= priority:
                     temp = temp.next
                 new_node.next = temp.next
                 temp.next = new_node
@@ -52,7 +52,9 @@ p.push("Ahmed", 5)
 p.push("Hassan",1)
 p.push("Fazeel",10)
 p.push("Ibrahim",7)
+p.push("Usman", 5)
 print(p.size())
+
 
 
 
