@@ -35,10 +35,10 @@ class Stack:
         return self.__item_count
     
 
-# s = Stack()
+s = Stack()
 
-# for x in range(1,6):
-#     s.push(x*10)
+for x in range(1,6):
+    s.push(x*10)
 
 
 
@@ -53,6 +53,6 @@ class Stack:
 #     print(s.peek())
 #     s.pop()
 
-# # print(s.peek())
+# print(s.peek())
 
 # print(f'Items count: {s.size()}')
