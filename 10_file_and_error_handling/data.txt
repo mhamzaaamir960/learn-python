@@ -1,0 +1,3 @@
+Ali 80
+Hamza 90
+Sara 70
